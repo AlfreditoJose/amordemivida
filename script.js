@@ -164,7 +164,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ...CONFIG.fotos.map((photo, index) => ({
         type: "image",
         src: photo.src,
-        caption: photo.caption || `Recuerdo ${index + 1}`,
         fallback: `Foto ${index + 1}`
       })),
       { type: "message", title: "Y faltan mas", text: "Porque lo bonito de nosotros es que todavia quedan muchas paginas por llenar." }
@@ -193,8 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     return `
-      <img src="${escapeHTML(page.src)}" alt="${escapeHTML(page.caption)}" data-fallback="${escapeHTML(page.fallback)}">
-      <span class="photo-caption">${escapeHTML(page.caption)}</span>
+      <img src="${escapeHTML(page.src)}" alt="${escapeHTML(page.fallback)}" data-fallback="${escapeHTML(page.fallback)}">
     `;
   }
 
