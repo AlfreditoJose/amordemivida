@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fbf7f0" />
+  <title>Para ti | Nuestro album</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site-shell">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow">Te lo debo desde siempre</p>
+        <h1 id="heroTitle">Estos momentos, para ti.</h1>
+          <p class="hero-text">Un rincón donde viven nuestros recuerdos: fotos, canciones y las palabras que mi corazón guarda solo para ti.</p>
+        <button class="primary-button" id="openAlbumHero" type="button">Abrir nuestro álbum</button>
+      </div>
+
+      <button class="album-cover" id="openAlbumCover" type="button" aria-label="Abrir album">
+        <span class="cover-ribbon">Contigo creo en los finales felices</span>
+        <span class="cover-title">Nuestro álbum</span>
+        <span class="cover-name" id="coverName">Para el amor de mi vida</span>
+        <span class="cover-hint">Abre para sentir</span>
+      </button>
+    </section>
+
+    <section class="message-section" aria-labelledby="messageTitle">
+      <div>
+        <p class="eyebrow">Poema</p>
+        <h2 id="messageTitle">Para mis ojitos negros.</h2>
+      </div>
+      <p id="loveLetter" class="letter-text"></p>
+    </section>
+
+    <section class="music-section" aria-labelledby="musicTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Musiquita </p>
+        <h2 id="musicTitle">Para dedicar</h2>
+      </div>
+      <div class="music-card special">
+        <div>
+          <p class="music-label">Canción especial</p>
+        </div>
+        <div class="spotify-embed">
+          <iframe src="https://open.spotify.com/embed/track/5F1aLmVpdvcEQ99gRCpeCi?si=2664699a01fe4785" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="music-card">
+        <div>
+          <p class="music-label">te amo mucho</p>
+        </div>
+        <div id="spotifyEmbed" class="spotify-embed"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="book-viewer" id="bookViewer" aria-hidden="true">
+    <div class="viewer-shade" data-close-viewer></div>
+    <section class="viewer-dialog" role="dialog" aria-modal="true" aria-label="Album abierto">
+      <button class="icon-button close-button" id="closeViewer" type="button" aria-label="Cerrar album">x</button>
+      <div class="book-stage" id="bookStage">
+        <div class="book">
+          <div class="book-spine" aria-hidden="true"></div>
+          <div class="book-page page-left" id="leftPage"></div>
+          <div class="book-page page-right" id="rightPage"></div>
+          <div class="flipping-page" id="flippingPage" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="viewer-controls">
+        <button class="soft-button" id="prevPage" type="button">Anterior</button>
+        <span class="page-indicator"><span id="pageIndicator">1</span> / <span id="pageTotal">1</span></span>
+        <button class="soft-button" id="nextPage" type="button">Siguiente</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
