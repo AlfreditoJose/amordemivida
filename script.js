@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
       "— Garcilaso de la Vega"
     ].join("\n"),
     fotos: [
-      { src: "1782200762353.jpeg", caption: "Nuestro primer recuerdo" },
-      { src: "1782200762328.jpg", caption: "Un dia bonito" },
-      { src: "1782200762334.jpg", caption: "Tu sonrisa favorita" },
-      { src: "1782200762341.jpg", caption: "Nosotros" },
-      { src: "1782200762347.jpg", caption: "Otro momento" },
-      { src: "1782200762321.jpg", caption: "Para recordar siempre" }
+      { src: "1782200762353.jpeg", caption: "" },
+      { src: "1782200762328.jpg", caption: "" },
+      { src: "1782200762334.jpg", caption: "" },
+      { src: "1782200762341.jpg", caption: "" },
+      { src: "1782200762347.jpg", caption: "" },
+      { src: "1782200762321.jpg", caption: "" }
     ]
   };
 
